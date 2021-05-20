@@ -1,0 +1,51 @@
+FONTS
+navigation bar: Didot 
+footer: Brush Script MT
+headings: Copperplate
+text inside boxes: Verdana
+
+
+COLOUR
+
+Background: black 131613
+text boxes:Red D5471D
+navigation bar: light blue 0BF0F0
+footer: hot pink F85DAD
+
+
+SECTION NAMES
+page 1. (homepage)
+<nav>
+<profile>
+<About Me>
+<footer>
+
+page 2 (hobbies)
+<nav>
+<heading>
+<picOne>
+<picTwo>
+<picThree>
+<aboutGod>
+<euphoBand>
+<nrl>
+<footer>
+
+
+page 3. (culture, Ethncity)
+<nav>
+<memoryVerse>
+<picOne>
+<sideOne>
+<sideTwo>
+<picTwo>
+<sideA>
+<sideB>
+
+page 4 (Contact me)
+<nav>
+<header>
+<text>
+<footer>
+<picOne>
+<picTwo>
