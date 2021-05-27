@@ -1,15 +1,14 @@
-FONTS
+abooutFONTS
 navigation bar: Didot 
 footer: Brush Script MT
 headings: Copperplate
 text inside boxes: Verdana
-Test
 
 COLOUR
 
 Background: black 131613
 text boxes:Red D5471D
-navigation bar: light blue 0BF0F0
+navigation bar: light blue 
 footer: hot pink F85DAD
 
 

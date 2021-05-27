@@ -1,0 +1,46 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav nav"
+  "header header"
+  "profile aboutMe"
+  "footer footer"
+}
+
+.header{
+grid-area: header;
+background-color: yellow;
+padding: 100px
+}
+
+.nav{
+  grid-area: nav;
+  background-color: blue;
+  padding: 20px
+}
+
+.profile {
+  grid-area: profile;
+  background-color: greenyellow;
+  padding: 
+}
+
+.aboutMe {
+  grid-area: aboutMe;
+  background-color: red;
+  padding: 70px
+}
+
+.footer {
+  grid-area: footer;
+  background-color: hotpink;
+  padding: 20px 
+}
+
+
+
+
+
+
