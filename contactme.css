@@ -5,7 +5,7 @@
   grid-template-areas: 
   "nav nav nav nav"
   "header header header header"
-  "text text text text"
+  "text text picOne picOne"
   "contactOne contactTwo contactThree contactFour"
   "footer footer footer footer";
   grid-gap: 15px
@@ -25,15 +25,20 @@
 .header{
   grid-area: header;
   background-color: yellow;
-
+  padding: 30px;
 }
 
 .text{
   grid-area: text;
   background-color: orangered;
-  padding: 200px;
+  padding: 150px
 }
 
+.picOne{
+  grid-area: picOne;
+  background-color: orangered;
+
+}
 .contactOne{
   grid-area: contactOne;
   background-color:black;
