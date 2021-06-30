@@ -1,0 +1,71 @@
+.container { 
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+"nav nav nav"
+"heading heading heading"
+"picOne textOne textOne"
+"textTwo textTwo picTwo"
+"picThree textThree textThree"
+"footer footer footer";
+grid-gap: 15px
+  }
+
+
+.nav li{
+  display: inline;
+  padding: 180px;
+}
+
+
+.nav {
+  grid-area: nav;
+  background-color: aqua;
+  padding: 20px
+}
+
+.heading {
+  grid-area: heading;
+  background-color: rgb(217, 255, 0)  ;
+  padding: 40px
+}
+
+.picOne {
+  grid-area: picOne;
+  background-color: pink;
+}
+
+.textOne {
+  grid-area: textOne;
+  background-color: greenyellow;
+  
+}
+
+.picTwo{
+  grid-area: picTwo;
+  background-color: pink;
+
+}
+
+.textTwo {
+  grid-area: textTwo;
+  background-color: greenyellow;
+}
+
+.picThree {
+  grid-area: picThree;
+  background-color: pink;
+}
+
+.textThree {
+  grid-area: textThree;
+  background-color: greenyellow;
+  padding: 
+}
+
+footer {
+  grid-area: footer;
+  background: aqua;
+  padding: 40px
+}

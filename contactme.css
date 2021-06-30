@@ -1,0 +1,64 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav nav nav nav"
+  "header header header header"
+  "text text text text"
+  "contactOne contactTwo contactThree contactFour"
+  "footer footer footer footer";
+  grid-gap: 15px
+}
+
+.nav{
+  grid-area: nav;
+  background-color: gold;
+  padding: 30px;
+}
+
+.nav li{
+  display: inline;
+  padding: 180px;
+}
+
+.header{
+  grid-area: header;
+  background-color: yellow;
+
+}
+
+.text{
+  grid-area: text;
+  background-color: orangered;
+  padding: 200px;
+}
+
+.contactOne{
+  grid-area: contactOne;
+  background-color:black;
+  padding: 20px;
+}
+
+.contactTwo{
+  grid-area: contactTwo;
+  background-color: black;
+  padding: 20px;
+}
+
+.contactThree{
+  grid-area: contactThree;
+  background-color: black;
+  padding: 20px;
+}
+
+.contactFour{
+  grid-area: contactFour;
+  background-color: black;
+  padding: 20px;
+}
+.footer{
+  grid-area: footer;
+  background-color: gold;
+  padding: 40px;
+}

@@ -1,0 +1,72 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav nav nav"
+  "headOne  headOne headOne"
+  "picOne textOne textOne"
+  "headTwo headTwo headTwo"
+  "textTwo textTwo picTwo"
+  "footer footer footer";
+  grid-gap: 15px
+}
+
+.nav li{
+  display: inline;
+  padding: 180px;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: greenyellow;
+  padding: 40px
+}
+
+.headOne{
+  grid-area: headOne;
+  background-color: aqua ;
+  padding: 15px ;
+  margin: auto;
+  height: 100px;
+  width: 250px
+}
+
+.picOne{
+  grid-area: picOne;
+  background-color: rgb(255, 230, 0);
+}
+
+.textOne{
+  grid-area:textOne ;
+  background-color: pink ;
+  padding: 40px;
+}
+
+.headTwo {
+  grid-area:headTwo ;
+  background-color: aqua ;
+  padding: 15px;
+   margin: auto;
+  height: 100px;
+  width: 250px
+}
+
+
+.textTwo {
+  grid-area: textTwo;
+  background-color: pink ;
+  padding: 40px;
+}
+
+
+.picTwo{
+  grid-area: picTwo;
+  background-color: rgb(255, 230, 0) ;
+}
+
+.footer{
+  grid-area: footer ;
+  background-color: greenyellow;
+  padding: 40px ;
+}
