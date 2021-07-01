@@ -25,11 +25,8 @@
 
 .headOne{
   grid-area: headOne;
-  background-color: aqua ;
   padding: 15px ;
-  margin: auto;
-  height: 100px;
-  width: 250px
+  text-align: centre;
 }
 
 .picOne{
@@ -45,11 +42,8 @@
 
 .headTwo {
   grid-area:headTwo ;
-  background-color: aqua ;
   padding: 15px;
-   margin: auto;
-  height: 100px;
-  width: 250px
+  text-align: centre;
 }
 
 
