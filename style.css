@@ -22,7 +22,7 @@ grid-area: header;
 
 .nav li{
   display: inline;
-  padding: 180px;
+  padding: 10px;
 }
 
 .profile {
