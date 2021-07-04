@@ -16,7 +16,7 @@ grid-area: header;
 
 .nav{
   grid-area: nav;
-  background-color: rgba(182, 248, 250, 0.952);
+  background-color: #b6f8faf3;
   padding: 20px
 }
 
@@ -33,13 +33,13 @@ grid-area: header;
 
 .aboutMe {
   grid-area: aboutMe;
-  background-color:rgba(255, 105, 180, 0.575) ;
+  background-color:#ff69b493 ;
   padding: 70px
 }
 
 .footer {
   grid-area: footer;
-  background-color:  rgba(182, 248, 250, 0.952);
+  background-color:  #b6f8faf3;
   padding: 20px 
 }
 

@@ -21,51 +21,51 @@ grid-gap: 15px
 
 .nav {
   grid-area: nav;
-  background-color: aqua;
+  background-color: #00ffff;
   padding: 20px
 }
 
 .heading {
   grid-area: heading;
-  background-color: rgb(217, 255, 0)  ;
+  background-color: #d9ff00  ;
   padding: 40px
 }
 
 .picOne {
   grid-area: picOne;
-  background-color: pink;
+  background-color: #ffc0cb;
 }
 
 .textOne {
   grid-area: textOne;
-  background-color: greenyellow;
+  background-color: #adff2f;
   
 }
 
 .picTwo{
   grid-area: picTwo;
-  background-color: pink;
+  background-color: #ffc0cb;
 
 }
 
 .textTwo {
   grid-area: textTwo;
-  background-color: greenyellow;
+  background-color: #adff2f;
 }
 
 .picThree {
   grid-area: picThree;
-  background-color: pink;
+  background-color: #ffc0cb;
 }
 
 .textThree {
   grid-area: textThree;
-  background-color: greenyellow;
+  background-color: #adff2f;
   padding: 
 }
 
 footer {
   grid-area: footer;
-  background: aqua;
+  background: #00ffff;
   padding: 40px
 }

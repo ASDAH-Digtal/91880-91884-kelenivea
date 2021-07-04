@@ -13,7 +13,7 @@
 
 .nav{
   grid-area: nav;
-  background-color: gold;
+  background-color: #ffd700;
   padding: 30px;
 }
 
@@ -24,46 +24,46 @@
 
 .header{
   grid-area: header;
-  background-color: yellow;
+  background-color: #ffff00;
   padding: 30px;
 }
 
 .text{
   grid-area: text;
-  background-color: orangered;
+  background-color: #ff4500;
   padding: 150px
 }
 
 .picOne{
   grid-area: picOne;
-  background-color: orangered;
+  background-color: #ff4500;
 
 }
 .contactOne{
   grid-area: contactOne;
-  background-color:black;
+  background-color:#000000;
   padding: 20px;
 }
 
 .contactTwo{
   grid-area: contactTwo;
-  background-color: black;
+  background-color: #000000;
   padding: 20px;
 }
 
 .contactThree{
   grid-area: contactThree;
-  background-color: black;
+  background-color: #000000;
   padding: 20px;
 }
 
 .contactFour{
   grid-area: contactFour;
-  background-color: black;
+  background-color: #000000;
   padding: 20px;
 }
 .footer{
   grid-area: footer;
-  background-color: gold;
+  background-color: #ffd700;
   padding: 40px;
 }

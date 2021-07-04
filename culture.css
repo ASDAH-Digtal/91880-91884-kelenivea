@@ -19,7 +19,7 @@
 
 .nav {
   grid-area: nav;
-  background-color: greenyellow;
+  background-color: #adff2f;
   padding: 40px
 }
 
@@ -31,12 +31,12 @@
 
 .picOne{
   grid-area: picOne;
-  background-color: rgb(255, 230, 0);
+  background-color: #ffe600;
 }
 
 .textOne{
   grid-area:textOne ;
-  background-color: pink ;
+  background-color: #ffc0cb ;
   padding: 40px;
 }
 
@@ -49,18 +49,18 @@
 
 .textTwo {
   grid-area: textTwo;
-  background-color: pink ;
+  background-color: #ffc0cb ;
   padding: 40px;
 }
 
 
 .picTwo{
   grid-area: picTwo;
-  background-color: rgb(255, 230, 0) ;
+  background-color: #ffe600 ;
 }
 
 .footer{
   grid-area: footer ;
-  background-color: greenyellow;
+  background-color: #adff2f;
   padding: 40px ;
 }
