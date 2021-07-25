@@ -1,26 +1,40 @@
+
+body{
+  background-color: #FFBA08
+}
+
 .container{
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "nav nav"
+  "navOne navTwo"
   "header header"
   "profile aboutMe"
   "footer footer";
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 
 .header{
-grid-area: header;
+  grid-area: header;
 }
 
-.nav{
-  grid-area: nav;
-  background-color: #b6f8faf3;
-  padding: 20px
+.navOne{
+  grid-area: navOne;
+  background-color: #03071E ;
+  padding: 20px;
 }
 
-.nav li{
+.navTwo{
+  grid-area: navTwo;
+  background-color: #03071E ;
+  padding: 20px;
+  text-align: right;
+}
+
+.navTwo li{
   display: inline;
   padding: 10px;
 }
@@ -33,13 +47,13 @@ grid-area: header;
 
 .aboutMe {
   grid-area: aboutMe;
-  background-color:#ff69b493 ;
+  background-color:#9D0208 ;
   padding: 70px
 }
 
 .footer {
   grid-area: footer;
-  background-color:  #b6f8faf3;
+  background-color:  #03071E;
   padding: 20px 
 }
 
@@ -47,6 +61,6 @@ grid-area: header;
   font-size: 40px
 }
 
-
-
-
+img {
+  width: 100%;
+}

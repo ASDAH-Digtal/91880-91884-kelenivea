@@ -13,7 +13,7 @@
 
 .nav{
   grid-area: nav;
-  background-color: #ffd700;
+  background-color: #03071E;
   padding: 30px;
 }
 
@@ -24,19 +24,19 @@
 
 .header{
   grid-area: header;
-  background-color: #ffff00;
+  background-color: #FAA307;
   padding: 30px;
 }
 
 .text{
   grid-area: text;
-  background-color: #ff4500;
+  background-color: #FAA307;
   padding: 150px
 }
 
 .picOne{
   grid-area: picOne;
-  background-color: #ff4500;
+  background-color: #FAA307;
 
 }
 .contactOne{
@@ -64,6 +64,6 @@
 }
 .footer{
   grid-area: footer;
-  background-color: #ffd700;
+  background-color: #03071E;
   padding: 40px;
 }

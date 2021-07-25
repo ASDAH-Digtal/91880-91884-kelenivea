@@ -21,13 +21,13 @@ grid-gap: 15px
 
 .nav {
   grid-area: nav;
-  background-color: #00ffff;
+  background-color: #03071E;
   padding: 20px
 }
 
 .heading {
   grid-area: heading;
-  background-color: #d9ff00  ;
+  background-color: #DC2F02 ;
   padding: 40px
 }
 
@@ -38,7 +38,7 @@ grid-gap: 15px
 
 .textOne {
   grid-area: textOne;
-  background-color: #adff2f;
+  background-color: #F48206;
   
 }
 
@@ -50,7 +50,8 @@ grid-gap: 15px
 
 .textTwo {
   grid-area: textTwo;
-  background-color: #adff2f;
+  background-color: #F48206;
+  background-color: ;
 }
 
 .picThree {
@@ -60,12 +61,12 @@ grid-gap: 15px
 
 .textThree {
   grid-area: textThree;
-  background-color: #adff2f;
+  background-color: #F48206;
   padding: 
 }
 
 footer {
   grid-area: footer;
-  background: #00ffff;
+  background: #03071E;
   padding: 40px
 }
