@@ -1,68 +1,97 @@
-.container { 
-display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-"nav nav nav"
-"heading heading heading"
-"picOne textOne textOne"
-"textTwo textTwo picTwo"
-"picThree textThree textThree"
-"footer footer footer";
-grid-gap: 15px
-  }
-
-
-.nav li{
-  display: inline;
-  padding: 10px;
+body{
+  background-color: #FFBA08
 }
 
 
-.nav {
-  grid-area: nav;
-  background-color: #03071E;
-  padding: 20px
+
+.container { 
+display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+"navOne navTwo "
+"heading heading "
+"picOne picTwo "
+"textOne textTwo "
+"picThree picFour "
+"textThree textFour"
+"footer footer ";
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+
+
+.navOne{
+  grid-area: navOne;
+  background-color: #03071E ;
+  padding: 20px;
+}
+
+.navTwo{
+  grid-area: navTwo;
+  background-color: #03071E ;
+  padding: 20px;
+  text-align: right;
+}
+
+.navTwo li{
+  display: inline;
+  padding: 15px;
 }
 
 .heading {
   grid-area: heading;
   background-color: #DC2F02 ;
-  padding: 40px
+  padding: 150px;
+  text-align: center;
 }
 
 .picOne {
   grid-area: picOne;
-  background-color: #ffc0cb;
+  text-align: center;
 }
 
 .textOne {
   grid-area: textOne;
   background-color: #F48206;
-  
+   padding: 50px;
 }
 
 .picTwo{
   grid-area: picTwo;
-  background-color: #ffc0cb;
-
+   text-align: center;
+ 
 }
 
 .textTwo {
   grid-area: textTwo;
   background-color: #F48206;
-  background-color: ;
+  padding: 50px;
 }
 
 .picThree {
   grid-area: picThree;
-  background-color: #ffc0cb;
+   text-align: center;
+  
 }
 
 .textThree {
   grid-area: textThree;
   background-color: #F48206;
-  padding: 
+   padding: 50px;
+}
+
+.picFour{
+  grid-area: picFour;
+  background-color: #ffffff;
+  padding: 50px;
+   text-align: center;
+}
+
+.textFour {
+  grid-area: textThree;
+  background-color: #F48206;
+   padding: 50px;
 }
 
 footer {

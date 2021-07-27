@@ -3,24 +3,32 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "nav nav nav"
+  "navOne navTwo navTwo"
   "headOne  headOne headOne"
   "picOne textOne textOne"
   "headTwo headTwo headTwo"
   "textTwo textTwo picTwo"
   "footer footer footer";
-  grid-gap: 15px
+   padding-left: 10%;
+  padding-right: 10%;
 }
 
-.nav li{
+.navOne{
+  grid-area: navOne;
+  background-color: #03071E ;
+  padding: 20px;
+}
+
+.navTwo{
+  grid-area: navTwo;
+  background-color: #03071E ;
+  padding: 20px;
+  text-align: right;
+}
+
+.navTwo li{
   display: inline;
   padding: 10px;
-}
-
-.nav {
-  grid-area: nav;
-  background-color: #03071E;
-  padding: 40px
 }
 
 .headOne{
