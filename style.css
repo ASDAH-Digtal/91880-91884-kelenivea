@@ -1,7 +1,4 @@
 
-body{
-  background-color: #FFBA08
-}
 
 .container{
   display: grid;
@@ -27,6 +24,10 @@ body{
   padding: 20px;
 }
 
+.nav a {
+color:white;
+}
+
 .navTwo{
   grid-area: navTwo;
   background-color: #03071E ;
@@ -42,7 +43,7 @@ body{
 .profile {
   grid-area: profile;
   background-color:;
-  padding: 70px
+  
 }
 
 .aboutMe {

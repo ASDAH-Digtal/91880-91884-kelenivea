@@ -18,6 +18,10 @@
   padding: 20px;
 }
 
+.nav a {
+color:white;
+}
+
 .navTwo{
   grid-area: navTwo;
   background-color: #03071E ;

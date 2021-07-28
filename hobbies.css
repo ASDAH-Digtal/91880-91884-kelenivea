@@ -39,6 +39,10 @@ display: grid;
   padding: 15px;
 }
 
+.nav a {
+color:white;
+}
+
 .heading {
   grid-area: heading;
   background-color: #DC2F02 ;

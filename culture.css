@@ -1,9 +1,11 @@
+
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
   "navOne navTwo navTwo"
+   "title title title"
   "headOne  headOne headOne"
   "picOne textOne textOne"
   "headTwo headTwo headTwo"
@@ -19,6 +21,10 @@
   padding: 20px;
 }
 
+.nav a {
+color:white;
+}
+
 .navTwo{
   grid-area: navTwo;
   background-color: #03071E ;
@@ -30,6 +36,14 @@
   display: inline;
   padding: 10px;
 }
+
+.title {
+  grid-area: title;
+  background-color: #DC2F02 ;
+  padding: 150px;
+  text-align: center;
+}
+
 
 .headOne{
   grid-area: headOne;
