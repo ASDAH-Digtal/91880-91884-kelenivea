@@ -1,105 +1,158 @@
-body{
-  background-color: #FFBA08
-}
-
 
 
 .container { 
-display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+  "nav nav nav"
+  "heading heading heading"
+  "picOne picTwo picThree"
+  "textOne textTwo textThree"
+  "footer footer footer";
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-gap: 10px;
+}
+
+
+@media only screen and (max-width: 600px){
+  .container{
+     display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-"navOne navTwo "
-"heading heading "
-"picOne picTwo "
-"textOne textTwo "
-"picThree picFour "
-"textThree textFour"
-"footer footer ";
-  padding-left: 10%;
-  padding-right: 10%;
+  "nav"
+  "heading"
+  "picOne"
+  "textOne"
+  "picTwo"
+  "textTwo"
+  "picThree"
+  "textThree"
+  "footer";
   }
+}
 
+.nav{
+  grid-area: nav;
+  background-color:#A8AADA ;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "nav-left nav-right";
+}
 
-.navOne{
-  grid-area: navOne;
-  background-color: #03071E ;
+.nav-left {
+  grid-area: nav-left;
+  background-color: #A8AADA ;
   padding: 20px;
 }
 
-.navTwo{
-  grid-area: navTwo;
-  background-color: #03071E ;
+.nav-right{
+  grid-area: nav-right;
+  background-color: #A8AADA ;
   padding: 20px;
-  text-align: right;
-}
-
-.navTwo li{
   display: inline;
-  padding: 15px;
+  text-align: right; 
+}
+
+.nav-right li {
+  display: inline;
 }
 
 .nav a {
-color:white;
+color:#ffffff;
 }
 
 .heading {
   grid-area: heading;
-  background-color: #DC2F02 ;
-  padding: 150px;
+  background-image: url("images/palmtree.jpg");
   text-align: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-position: center;*/
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
+
 
 .picOne {
   grid-area: picOne;
   text-align: center;
+  padding: 30px
+    
 }
 
 .textOne {
   grid-area: textOne;
-  background-color: #F48206;
+  background-color: #E6B1CF;
    padding: 50px;
+   color: #1a025e
 }
 
 .picTwo{
   grid-area: picTwo;
    text-align: center;
- 
+ padding: 30px
 }
 
 .textTwo {
   grid-area: textTwo;
-  background-color: #F48206;
+  background-color: #E6B1CF;
   padding: 50px;
+  color: #1a025e
 }
 
 .picThree {
   grid-area: picThree;
    text-align: center;
+   background-color: #ffffff;
+   padding: 30px
   
 }
 
 .textThree {
   grid-area: textThree;
-  background-color: #F48206;
+  background-color: #E6B1CF;
    padding: 50px;
+   color: #1a025e
 }
 
 .picFour{
   grid-area: picFour;
   background-color: #ffffff;
-  padding: 50px;
+  padding: 30px;
    text-align: center;
 }
 
 .textFour {
-  grid-area: textThree;
-  background-color: #F48206;
+  grid-area: textFour;
+  background-color: #E6B1CF;
    padding: 50px;
+   color: #1a025e
 }
 
 footer {
   grid-area: footer;
-  background: #03071E;
-  padding: 40px
+  background: #A8AADA;
+  padding: 30px
+}
+
+img{
+  width:100%;
+}
+
+.button {
+  background-color: rgb(175, 76, 97); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

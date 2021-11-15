@@ -1,67 +1,189 @@
 
-
 .container{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "navOne navTwo"
+  "nav nav"
   "header header"
   "profile aboutMe"
   "footer footer";
   padding-left: 10%;
   padding-right: 10%;
+  grid-gap: 15px;
 }
 
-
-.header{
-  grid-area: header;
+.nav{
+  grid-area: nav;
+  background-color:#A8AADA ;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "nav-left nav-right";
 }
 
-.navOne{
-  grid-area: navOne;
-  background-color: #03071E ;
+.nav-left {
+  grid-area: nav-left;
+  background-color: #A8AADA ;
   padding: 20px;
 }
+
+.nav-right{
+  grid-area: nav-right;
+  background-color: #A8AADA ;
+  padding: 20px;
+  display: inline;
+  text-align: right; 
+}
+
+.nav-right li {
+  display: inline;
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+     display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "navOne"
+  "navTwo"
+  "header"
+  "profile"
+  "aboutMe"
+  "footer";
+  }
+}
+
+
+
+
+.header {
+  grid-area: header;
+  background-image: url("images/palmtree.jpg");
+  text-align: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-position: center;*/
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/*.navOne{
+  grid-area: navOne;
+  background-color: #A8AADA ;
+  padding: 20px;
+}*/
 
 .nav a {
 color:white;
 }
 
-.navTwo{
-  grid-area: navTwo;
-  background-color: #03071E ;
-  padding: 20px;
-  text-align: right;
+
+
+.nav{
+  grid-area: nav;
+  background-color:#A8AADA ;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+    "nav-left nav-right";
 }
 
-.navTwo li{
-  display: inline;
-  padding: 10px;
+
+.nav-left {
+  grid-area: nav-left;
+  background-color: #A8AADA ;
+  padding: 20px;
 }
+
+
+
+
+
+.nav-right{
+  grid-area: nav-right;
+  background-color: #A8AADA ;
+  padding: 20px;
+  display: inline;
+  text-align: right; 
+}
+
+
+
+.nav-right li {
+  display: inline;
+}
+
+
+
 
 .profile {
-  grid-area: profile;
-  background-color:;
-  
+  grid-area: profile; 
 }
+
+
+
+
 
 .aboutMe {
   grid-area: aboutMe;
-  background-color:#9D0208 ;
-  padding: 70px
+  background-color: #E6B1CF ;
+  padding: 20px;
+ position: relative;
+  color: #68324C
 }
+
+
+
+
+.aboutMe p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffff
+}
+
+
+
+
 
 .footer {
   grid-area: footer;
-  background-color:  #03071E;
-  padding: 20px 
+  background-color:  #A8AADA;
+  padding: 10px 
 }
+
+
+
+
 
 .aboutMe li{
   font-size: 40px
 }
 
+
+
+
+
 img {
   width: 100%;
+}
+
+
+
+
+
+.button {
+  background-color: rgb(175, 76, 97); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

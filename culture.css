@@ -4,8 +4,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "navOne navTwo navTwo"
-   "title title title"
+  "nav nav nav"
+  "header header header"
   "headOne  headOne headOne"
   "picOne textOne textOne"
   "headTwo headTwo headTwo"
@@ -13,76 +13,122 @@
   "footer footer footer";
    padding-left: 10%;
   padding-right: 10%;
+  grid-gap: 15px;
 }
 
-.navOne{
-  grid-area: navOne;
-  background-color: #03071E ;
+@media only screen and (max-width: 600px){
+  .container{
+     display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav"
+  "header"
+  "headOne"
+  "picOne"
+  "textOne"
+  "picTwo"
+  "textTwo"
+  "footer";
+  }
+}
+
+
+
+
+.nav{
+  grid-area: nav;
+  background-color:#A8AADA ;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "nav-left nav-right";
+}
+
+.nav-left {
+  grid-area: nav-left;
+  background-color: #A8AADA ;
   padding: 20px;
 }
 
-.nav a {
-color:white;
-}
-
-.navTwo{
-  grid-area: navTwo;
-  background-color: #03071E ;
+.nav-right{
+  grid-area: nav-right;
+  background-color: #A8AADA ;
   padding: 20px;
-  text-align: right;
-}
-
-.navTwo li{
   display: inline;
-  padding: 10px;
+  text-align: right; 
 }
 
-.title {
-  grid-area: title;
-  background-color: #DC2F02 ;
-  padding: 150px;
-  text-align: center;
+.nav-right li {
+  display: inline;
 }
+
+.header {
+  grid-area: header;
+  background-image: url("images/palmtree.jpg");
+  text-align: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-position: center;*/
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 
 
 .headOne{
   grid-area: headOne;
   padding: 15px ;
-  text-align: centre;
+  text-align: center;
 }
 
 .picOne{
   grid-area: picOne;
-  background-color: #ffe600;
+  background-color: #ffffff;
 }
 
 .textOne{
   grid-area:textOne ;
-  background-color: #D00000 ;
-  padding: 40px;
+  background-color: #E6B1CF ;
+  padding: 10px;
+  
 }
 
 .headTwo {
   grid-area:headTwo ;
   padding: 15px;
-  text-align: centre;
+  text-align: center;
 }
 
 
 .textTwo {
   grid-area: textTwo;
-  background-color: #D00000 ;
-  padding: 40px;
+  background-color: #E6B1CF ;
+  padding: 80px;
+  text-align: center;
 }
 
 
 .picTwo{
   grid-area: picTwo;
-  background-color: #ffe600 ;
+  background-color: #ffffff ;
 }
 
 .footer{
   grid-area: footer ;
-  background-color: #03071E;
+  background-color: #A8AADA;
   padding: 40px ;
+}
+
+.button {
+  background-color: rgb(175, 76, 97); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

@@ -3,79 +3,122 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "navOne navOne navTwo navTwo"
+  "nav nav nav nav"
   "header header header header"
-  "text text picOne picOne"
+  "text text text picOne"
   "contactOne contactTwo contactThree contactFour"
   "footer footer footer footer";
    padding-left: 10%;
   padding-right: 10%;
+  grid-gap: 15px;
 }
 
-.navOne{
-  grid-area: navOne;
-  background-color: #03071E ;
+@media only screen and (max-width: 600px){
+  .container{
+     display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav"
+  "header"
+  "picOne"
+  "text"
+  "contactOne"
+  "contactTwo"
+  "contactThree"
+  "contactFour"
+  "footer";
+  }
+}
+
+.nav{
+  grid-area: nav;
+  background-color:#A8AADA ;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "nav-left nav-right";
+}
+
+.nav-left {
+  grid-area: nav-left;
+  background-color: #A8AADA ;
   padding: 20px;
 }
 
-.nav a {
-color:white;
-}
-
-.navTwo{
-  grid-area: navTwo;
-  background-color: #03071E ;
+.nav-right{
+  grid-area: nav-right;
+  background-color: #A8AADA ;
   padding: 20px;
-  text-align: right;
-}
-
-.navTwo li{
   display: inline;
-  padding: 10px;
+  text-align: right; 
 }
 
-.header{
+.nav-right li {
+  display: inline;
+}
+
+.header {
   grid-area: header;
-  background-color: #FAA307;
-  padding: 30px;
+  background-image: url("images/palmtree.jpg");
+  text-align: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-position: center;*/
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .text{
   grid-area: text;
-  background-color: #FAA307;
-  padding: 150px
+  background-color: #E6B1CF;
+  padding: 100px
 }
 
 .picOne{
   grid-area: picOne;
-  background-color: #FAA307;
+  background-color: #E6B1CF;
 
 }
 .contactOne{
   grid-area: contactOne;
-  background-color:#000000;
+  background-color:#68324C;
   padding: 20px;
 }
 
 .contactTwo{
   grid-area: contactTwo;
-  background-color: #000000;
+  background-color: #68324C;
   padding: 20px;
 }
 
 .contactThree{
   grid-area: contactThree;
-  background-color: #000000;
+  background-color: #68324C;
   padding: 20px;
 }
 
 .contactFour{
   grid-area: contactFour;
-  background-color: #000000;
+  background-color: #68324C;
   padding: 20px;
 }
 .footer{
   grid-area: footer;
-  background-color: #03071E;
+  background-color: #A8AADA;
   padding: 40px;
+}
+
+
+.button {
+  background-color: rgb(175, 76, 97); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
